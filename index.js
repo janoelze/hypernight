@@ -50,14 +50,15 @@ exports.decorateConfig = config => {
         color: ${foregroundColor} !important;
         background-color: ${inactiveColor};
       }
-      .tab_text {border:0px!important; border-top: 2px solid rgba(255,255,255, 0)!important;}
+      .tab_text {border:0px!important;}
       .tab_text span { color: rgba(255,255,255,0.4) }
-      .tab_text.tab_textActive span { font-weight: bold; color: rgba(255,255,255, 0.9); }
-      .tab_text.tab_textActive { border-top: 2px solid rgba(255,255,255, 0.4)!important; }
+      .tab_text.tab_textActive span { font-weight: bold; color: #b58900; }
+      .tab_text.tab_textActive { box-shadow: inset 0px 3px 0px #b58900!important; }
       .tab_tab:before {
         border: 0;
       }
       .header_header {
+        top: 0px!important;
         background-color: ${inactiveColor}!important;
       }
       .tab_tab.tab_active {
